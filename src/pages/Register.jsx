@@ -70,14 +70,14 @@ function Register() {
           <form className=" flex flex-col items-center justify-evenly gap-8 px-3 my-8 w-full" onSubmit={handleSubmit}>
 
 
-            <input className=' w-full rounded-full text-3xl py-5 px-8  bg-[#EFEFEF]' placeholder="Enter Username" name="username" onChange={handleInput} />
+            <input className=' w-full rounded-full text-3xl py-5 px-8  bg-[#EFEFEF]' placeholder="Enter your name" name="username" onChange={handleInput} />
 
             <div className="w-full">
-              <input className={`w-full rounded-full text-3xl py-5 px-8  bg-[#EFEFEF] ${emailError ? 'outline outline-red-400' : ''} `} placeholder="Enter Email" name="email" onChange={handleInput} />
+              <input className={`w-full rounded-full text-3xl py-5 px-8  bg-[#EFEFEF] ${emailError ? 'outline outline-red-400' : ''} `} placeholder="Enter your email" name="email" onChange={handleInput} />
               {emailError && (<div className={`w-full flex items-center gap-1 text-red-600 px-8  `}><MdError /><span >Enter a valid email address</span></div>)}
             </div>
 
-            <button name='submit' className={` w-full rounded-full text-3xl py-5 text-white ${disable ? 'bg-[#C9C9C9]' : 'bg-font-black'} `} disabled={disable}>Submit</button>
+            <button name='submit' className={` w-full rounded-full text-2xl py-5 text-white ${disable ? 'bg-[#C9C9C9]' : 'bg-font-black'} `} disabled={disable}>Submit</button>
 
           </form>
         </div>
